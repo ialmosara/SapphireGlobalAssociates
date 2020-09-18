@@ -1,0 +1,30 @@
+@font-face {
+  font-family: FjallaOne;
+  src: url('./css/fonts/FjallaOne-Regular.ttf')
+}
+
+*, .sectionTitle, .companyInfo {
+  font-family: FjallaOne;
+}
+
+:root {
+  background-image: url(./images/background.jpg);
+}
+.nav {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+}
+
+.nav-logo {
+  height: 100px;
+}
+
+.section-content {
+  max-width: 70vw;
+  margin: 0 auto;
+  padding: 5%;
+}

@@ -1,0 +1,10 @@
+POST http://localhost:8000/contact
+content-type: application/json
+
+{
+    "name": "Immanuel Almosara",
+    "address": "123 Main road",
+    "email": "ialmosara@gmail.com",
+    "phoneNumber": "3478045361",
+    "message": "Testing 123"
+}
