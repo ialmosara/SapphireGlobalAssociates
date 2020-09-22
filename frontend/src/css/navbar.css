@@ -14,7 +14,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(228, 228, 228);
-    color: white;
+    z-index: 2;
 }
 
 .navbar-links ul {

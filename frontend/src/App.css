@@ -7,9 +7,6 @@
   font-family: FjallaOne;
 }
 
-:root {
-  background-image: url(./images/background.jpg);
-}
 .nav {
   position: sticky;
   top: 0px;
@@ -24,7 +21,10 @@
 }
 
 .section-content {
-  max-width: 70vw;
-  margin: 0 auto;
+  width: 40%;
+  height: 40%;
+  margin: auto auto;
   padding: 5%;
+  background: rgb(255, 255, 255);
+  background: rgba(255,255,255,0.5);
 }

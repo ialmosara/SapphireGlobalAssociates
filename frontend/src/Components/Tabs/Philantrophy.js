@@ -12,7 +12,7 @@ const Philantrophy = () => {
                 offset={-70}
                 duration={1000}
             >
-                Philantrophy
+                Philanthropy
               </Link>
         </li>
     )

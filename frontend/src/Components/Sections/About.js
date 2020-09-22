@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
+import { Parallax } from 'react-parallax';
 import axios from '../data/node_modules/axios';
+
+import Background from '../../images/bg2.jpg';
 
 const AboutSection = () => {
     const [name, setName] = useState('');
@@ -9,7 +12,7 @@ const AboutSection = () => {
     const [message, setMessage] = useState('');
 
     const sendMail = () => {
-        axios.post('http://107.180.1.225:8000/contact', {name, address, email, phoneNumber, message})
+        axios.post('http://sapphireglobalassociates.com/contact', {name, address, email, phoneNumber, message})
             .then(res => {
                 console.log(res.data);
             });
@@ -17,7 +20,9 @@ const AboutSection = () => {
     }
 
     return (
-        <div className="section">
+        <Parallax bgImage={Background}
+        strength={700}>
+        <div className="section text-center">
             <div className="section-content" id='section2'>
                 <h1 className='sectionTitle'>About</h1>
                 <p>Sapphire Global Associates, LLC <br />
@@ -49,6 +54,7 @@ const AboutSection = () => {
                 </form>
             </div>
         </div>
+        </Parallax>
     )
 };
 
